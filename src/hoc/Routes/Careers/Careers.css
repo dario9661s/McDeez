@@ -1,0 +1,486 @@
+.CareersContainer {
+    width: 100%;
+    margin: 160px auto 0 auto;
+}
+
+.lazyLoadCareers {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.4s ease-out;
+}
+
+.CareersFade {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.4s ease-out;
+}
+
+.CareersMainHeader {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.CareersMainHeader h1 {
+    margin: 0;
+    width: fit-content;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.CareersMainHeader div {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(103, 109, 104);
+}
+
+.CareersMainHeader div span{
+    width: fit-content;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.CareersMainHeaderParagraph {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+    color: rgb(82, 82, 82);
+    font-weight: 200;
+}
+
+.CareersMainHeaderImages {
+    width: 97%; 
+    height: 650px;
+    margin: 100px auto 80px auto; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CareersMainHeaderFirstImage {
+    width: 60%;
+    height: 100%;
+}
+
+.CareersMainHeaderSecondImageDiv {
+    width: 35%; 
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CareersMainHeaderSecondImageDiv img{
+    height: 48%;
+}
+
+.CareersFirstMissionDiv {
+    width: 50%;
+    margin: 0 auto 80px auto;
+    text-align: left;
+}
+
+.CareersFirstMissionDiv p:nth-child(1) {
+    color: rgb(116, 116, 116);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.CareersFirstMissionDiv h1 {
+    font-size: 40px;
+}
+
+.CareersFirstMissionDiv p:not(:nth-child(1)) {
+    font-family: 'Montserrat';
+    letter-spacing: -0.5px;
+    color: rgb(82, 82, 82);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.CareersCuttingImage {
+    width: 97%;
+    height: 650px;
+    margin: 0 auto 80px auto;
+}
+
+.CareersSecondMissionDiv {
+    width: 50%;
+    margin: 0 auto 130px auto;
+    text-align: left;
+}
+
+.CareersSecondMissionDiv p:nth-child(1) {
+    color: rgb(116, 116, 116);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.CareersSecondMissionDiv h1 {
+    font-size: 40px;
+}
+
+.CareersSecondMissionDiv p:not(:nth-child(1)) {
+    font-family: 'Montserrat';
+    letter-spacing: -0.5px;
+    color: rgb(82, 82, 82);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.CareersIconDiv {
+    width: 55%;
+    margin: 0 auto 120px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.CareersFirstSecondIconDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CareersFirstSecondIconDiv div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CareersFirstSecondIconDiv div img{
+    height: 60px;
+    width: 60px;
+}
+
+.CareersFirstSecondIconDiv div p{
+    font-family: 'Montserrat';
+    letter-spacing: -0.5px;
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+}
+
+.CareersFormDiv {
+    width: 80%;
+    margin: 0 auto 100px auto;
+}
+
+.CareersFormHeader {
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.CareersFormDivContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.CareersFormDivContentLeft {
+    width: 40%;
+    text-align: left;
+}
+
+.CareersFormDivContentLeft h1 {
+    font-size: 50px;
+    margin: 0 0 80px 0;
+}
+
+.CareersFormDivContentLeft p {
+    font-family: 'Montserrat';
+    letter-spacing: -0.5px;
+    color: rgb(82, 82, 82);
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.CareersFormDivContentForm {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+
+.CareersFormNameSurname {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.CareersFormEmailAge {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.CareersFormInput {
+    width: 45% !important;
+}
+
+.CareersSubmitButton {
+    width: 50%;
+    margin: 60px auto 0 auto;
+    text-decoration: none;
+    outline: none;
+    font-weight: 200;
+    font-size: 25px;
+    color: rgb(0, 140, 255);
+    border: 1.5px solid rgb(0, 140, 255);
+    border-radius: 5px;
+    padding: 15px 0;
+    background-color: white;
+    transition: 0.2s ease-out;
+}
+
+.CareersSubmitButton:hover {
+    cursor: pointer;
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+
+.CareersSubmitButton:active {
+    transform: translateY(10px);
+}
+
+
+@media (max-width: 1172px) { 
+
+    .CareersMainHeader h1 span {
+        display: none;
+    }
+    
+    .CareersMainHeaderFirstImage {
+        display: none;
+    }
+
+    .CareersMainHeaderImages {
+        height: fit-content;
+        margin-bottom: 100px;
+    }
+
+    .CareersMainHeaderSecondImageDiv {
+        width: 100%; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .CareersMainHeaderSecondImageDiv img{
+        height: unset;
+        width: 400px;
+        border-radius: 2px;
+    }
+
+    .CareersFirstMissionDiv {
+        width: 70%;
+    }
+
+    .CareersCuttingImage {
+        height: 470px;
+    }
+
+    .CareersSecondMissionDiv {
+        width: 70%;
+    }
+
+    .CareersIconDiv {
+        width: 75%;
+    }
+
+    .CareersFormDivContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .CareersFormDivContentLeft {
+        width: 70%;
+        margin-bottom: 80px;
+    }
+
+    .CareersFormDivContentForm {
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 915px) { 
+
+    .CareersContainer {
+        margin: 130px auto 0 auto;
+    }
+
+    .CareersMainHeaderParagraph span {
+        display: none;
+    }
+
+    .CareersMainHeaderSecondImageDiv {
+        display: none;
+    }
+
+    .CareersMainHeaderImages {
+        width: 100%;
+    }
+
+    .CareersMainHeaderFirstImage {
+        display: block;
+        width: 100%;
+    }
+
+    .CareersCuttingImage {
+        width: 100%;
+        height: 400px;
+    }
+
+    .CareersFormDivContentLeft {
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) { 
+
+    .CareersFormDivContentLeft {
+        width: 95%;
+    }
+
+    .CareersMainHeaderParagraph {
+        width: 80%;
+    }
+
+    .CareersMainHeader div {
+        box-shadow: none;
+    }
+
+    .CareersMainHeader {
+        width: 97%;
+        justify-content: space-between;
+    }
+    
+}
+
+@media (max-width: 640px) { 
+
+    .CareersFormDiv {
+        width: 95%;
+    }
+
+    .CareersFormDivContentForm {
+        width: 90%;
+    }
+
+    .CareersFormNameSurname {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-pack: justify;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .CareersFormEmailAge {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .CareersFormInput {
+        margin-bottom: 40px !important;
+        width: 100% !important;
+    }
+
+    .CareersSecondMissionDiv {
+        width: 90%;
+    }
+
+    .CareersCuttingImage {
+        height: 350px;
+    }
+
+    .CareersFirstMissionDiv {
+        width: 90%;
+    }
+
+    .CareersMainHeaderFirstPart {
+        display: none;
+    }
+
+    .CareersMainHeader h1 {
+        margin-right: 20px;
+    }
+
+    .CareersMainHeader div {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-left: 10px;
+        border-radius: 5px;
+        box-shadow: 1.5px 1.5px 1px rgb(103, 109, 104);
+    }
+
+    .CareersFormHeader {
+        font-size: 45px;
+    }
+
+    .CareersFormDivContentLeft h1 {
+        font-size: 45px;
+    }
+
+    .CareersMainHeaderImages {
+        margin-top: 70px;
+    }
+
+    .CareersMainHeaderParagraph {
+        width: 90%;
+    }
+
+    .CareersIconDiv {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 482px) { 
+
+    .CareersCuttingImage {
+        height: 280px;
+    }
+
+    .CareersFormDivContentLeft {
+        margin-bottom: 50px;
+    }
+
+    .CareersIconDiv {
+        width: 100%;
+    }
+
+    .CareersMainHeader h1 {
+        margin-right: 0;
+    }
+
+    .CareersMainHeader div {
+        width: 110px;
+        margin-left: 0;
+        border-radius: 5px;
+    }
+
+}

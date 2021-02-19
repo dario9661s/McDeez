@@ -1,0 +1,176 @@
+.POverflowDiv {
+    overflow-y: auto;
+    height: 371px;
+    width: 500px;
+    margin-right: 6%;
+    margin-top: 23px;
+}
+
+.PPlateFlexer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.PPlateBurger {
+    max-height: 100%;
+}
+
+.PPlateBurger img{
+    width: 395px;
+    padding: 5px 0;
+    border-radius: 10px;
+    animation: gettingIn 0.3s ease-out;
+    transition: transform 0.3s ease-out, background-color 1.2s ease-out;
+}
+
+.PPlateBurger img:hover:not(:first-child):not(:last-child){
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: rgba(255, 38, 0, 0.678);
+}
+
+.PPlatePizza {
+    position: relative;
+}
+
+.PPlatePizza img:first-child{
+    width: 395px;
+}
+
+.PPlatePizza img:not(:first-child){
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    width: 358px;
+    height: 322px;
+    border-radius: 47%;
+    animation: gettingIn 0.3s ease-out;
+    transition: transform 0.3s ease-out, border-right 1.2s ease-out;
+}
+
+.PPlatePizza img:hover:not(:first-child){
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.PPlateSalad {
+    position: relative;
+}
+
+.PPlateSalad img:first-child{
+    width: 404px;
+}
+
+.PPlateSalad img:not(:first-child){
+    position: absolute;
+    top: 23px;
+    left: 31px;
+    width: 336.5px;
+    height: 320px;
+    border-radius: 30%;
+    animation: gettingIn 0.3s ease-out;
+    transition: transform 0.3s ease-out, border-right 1.2s ease-out;
+}
+
+.PPlateSalad img:hover:not(:first-child){
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.PPlateWafel {
+    position: relative;
+}
+
+.PPlateWafel img:first-child{
+    width: 375px;
+}
+
+.PPlateWafel img:not(:first-child){
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 336.5px;
+    height: 320px;
+    border-radius: 30%;
+    animation: gettingIn 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.PPlateWafel img:hover:not(:first-child){
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@keyframes gettingIn {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 560px) { 
+
+    .PlatePleaseAddIngredients {
+        font-size: 18px;
+        left: 9% !important;
+    }
+
+    .PPlateBurger img{
+        width: 230px;
+    }
+
+    .PPlatePizza img:first-child{
+        width: 230px;
+    }
+    
+    .PPlatePizza img:not(:first-child){
+        position: absolute;
+        top: 11px;
+        left: 13px;
+        width: 205px;
+        height: 189px;
+        border-radius: 47%;
+        animation: gettingIn 0.3s ease-out;
+        transition: transform 0.3s ease-out, border-right 1.2s ease-out;
+    }
+    
+    .PPlateSalad img:first-child{
+        width: 230px;
+    }
+    
+    .PPlateSalad img:not(:first-child){
+        position: absolute;
+        top: 11px;
+        left: 13px;
+        width: 205px;
+        height: 189px;
+        border-radius: 30%;
+        animation: gettingIn 0.3s ease-out;
+        transition: transform 0.3s ease-out, border-right 1.2s ease-out;
+    }
+    
+    .PPlateWafel img:first-child{
+        width: 230px;
+    }
+    
+    .PPlateWafel img:not(:first-child){
+        position: absolute;
+        top: 11px;
+        left: 12px;
+        width: 206px;
+        height: 200px;
+        border-radius: 30%;
+        animation: gettingIn 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+    
+    .FBPlatePriceH1 {
+        margin: 0;
+    }
+
+}

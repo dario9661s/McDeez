@@ -1,0 +1,109 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-button {
+  width: 100px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9196b3;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #292929;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 46px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.MIContainer {
+    max-height: 85%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.MISecondListYesValue {
+  border-bottom: 1px solid lightgray;
+  padding: 0 0 0 30px !important;
+  animation: settingBackground 0.5s ease-out;
+  background-color: #9bff94;
+  border-radius: 10px;
+}
+
+@keyframes settingBackground {
+  0%{
+    background-color: white;
+  }
+  100% {
+    background-color: #9bff94;
+  }
+}
+
+
+@media (max-width: 1264px) { 
+
+  .MISecondListItem {
+      padding-left: 0 !important;
+  }
+
+  .MISecondListYesValue {
+      padding-left: 0 !important;
+  }
+
+}
+
+@media (max-width: 731px) { 
+
+  .MBContainer nav {
+    padding: 0 !important;
+  }
+
+  .MIContainer {
+    max-height: 100%;
+  }
+
+  .MISecondListItem {
+    padding: 0 !important;
+  }
+
+  .MIReallySecondListItem {
+    padding-left: 10px !important;
+  }
+
+  .MIListIcon {
+    display: none !important;
+  }
+
+  .MIFirstListItem {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .MIFirstListItemIcon {
+    min-width: 40px !important;
+  }
+
+  .MIDollarAPiece {
+    display: none;
+  }
+
+}

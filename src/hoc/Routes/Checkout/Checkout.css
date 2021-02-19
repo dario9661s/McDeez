@@ -1,0 +1,423 @@
+.CCheckoutContent {
+    z-index: 1;
+}
+
+.CLayout {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+
+.CSuccessfulOrder {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-out;
+}
+
+.DiliveryScooterImg {
+    animation: diliveryScooter 3s linear forwards;
+}
+
+@keyframes diliveryScooter{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    12%{
+        transform: translateX(-300px);
+        opacity: 1;
+    }
+    25%{
+        transform: translateX(-300px);
+        transform: rotate(-20deg);
+    }
+    37%{
+        transform: translateX(-300px);
+        transform: rotate(0);
+    }
+    50%{
+        transform: translateX(-300px);
+        transform: rotate(-20deg);
+    }
+    62%{
+        transform: translateX(-300px);
+        transform: rotate(0);
+    }
+    74%{
+        transform: translateX(-300px);
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
+
+.COrderCardsMainHeading {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 20px 20px 60px 20px; 
+    font-weight: 200; 
+    font-size: 50px; 
+    border-bottom: 1px solid lightgrey; 
+    padding-bottom: 20px;
+}
+
+.COrderCards {
+    width: 45%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CForm {
+    position: sticky;
+    top: 36px;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+}
+
+.CForm form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.CInputs{
+    width: 45% !important;
+    margin: 20px 0 !important;
+}
+
+.CInputsComments {
+    width: 70%;
+    margin: 40px auto !important;
+}
+
+.CSendOrderButton {
+    width: 35%;
+    height: 65px;
+    margin: 20px auto;
+    color: white;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    background-color: rgb(233, 80, 53);
+    box-shadow: 2px 2px 2px gray;
+    transition: 0.2s ease-out;
+}
+
+.CSendOrderButton:hover:not(:disabled) {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.CSendOrderButton:active:not(:disabled) {
+    transform: translateY(10px);
+}
+
+.CSendOrderButton:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    transform: scale(0.9);
+    box-shadow: none;
+}
+
+
+
+/* @keyframes appearing{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
+
+
+/* FROM THE ORDER CARDS FILE THE LARGE SETUP */
+
+.OCCardContainerLarge {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    margin: 0 auto 70px auto;
+    width: 90%;
+    border-bottom: 1px solid lightgray;
+    border-radius: 10px;
+    height: 170px;
+    transition: 0.3s ease-out;
+}
+
+.OCOrderContentLarge {
+    width: 70%;
+    text-align: center;
+}
+
+.OCOrderContentLarge h2{
+    margin: 5px;
+    padding-bottom: 5px;
+    font-weight: 200;
+    letter-spacing: 9px;
+    color: rgb(0, 0, 0);
+}
+
+.OCIngredientDiv {
+    margin: 10px auto 0 auto;
+    max-width: 90%;
+    max-height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.OCIngredientDiv span{
+    width: fit-content;
+    font-weight: 200;
+    font-size: 19px;
+    letter-spacing: 3px;
+    margin: 5px 5px;
+    color: black;
+}
+
+.OCCardContainerLarge .OCBurger {
+    align-self: center;
+    width: 30%;
+    overflow: auto;
+    max-height: 170px;
+    padding-left: 10px;
+}
+
+.OCCardContainerLarge .OCBurger img{
+    width: 100%;
+    margin: auto;
+}
+
+.OCCardContainerLarge .OCPizza {
+    width: 30%;
+    position: relative;
+}
+
+.OCCardContainerLarge .OCPizza img:first-child {
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    width: 165px;
+}
+
+.OCCardContainerLarge .OCPizza img:not(:first-child){
+    position: absolute;
+    width: 147px;
+    height: 133px;
+    top: 14px;
+    left: 10px;
+}
+
+.OCCardContainerLarge .OCSalad {
+    width: 30%;
+    position: relative;
+}
+
+.OCCardContainerLarge .OCSalad img:first-child{
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    width: 165px;
+}
+
+.OCCardContainerLarge .OCSalad img:not(:first-child){
+    position: absolute;
+    width: 145px;
+    height: 133px;
+    top: 14px;
+    left: 12px;
+}
+
+.OCCardContainerLarge .OCWafel {
+    width: 30%;
+    position: relative;
+}
+
+.OCCardContainerLarge .OCWafel img:first-child{
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    width: 165px;
+}
+
+.OCCardContainerLarge .OCWafel img:not(:first-child){
+    position: absolute;
+    width: 145px;
+    height: 142px;
+    top: 15px;
+    left: 11px;
+}
+
+
+/* FROM THE ORDER CARDS FILE THE MEDIOUM SETUP */
+
+.OCCardContainerMedioum {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    margin: 0 auto 55px auto;
+    width: 90%;
+    border-bottom: 1px solid lightgray;
+    border-radius: 10px;
+    height: 120px;
+    transition: 0.3s ease-out;
+}
+
+.OCOrderContentMedioum {
+    width: 70%;
+    text-align: center;
+}
+
+.OCOrderContentMedioum h2{
+    margin: 5px;
+    padding-bottom: 5px;
+    font-weight: 200;
+    letter-spacing: 9px;
+    color: rgb(0, 0, 0);
+}
+
+.OCCardContainerMedioum .OCDrinksAdditionalsImages{
+    width: 130px;
+}
+
+.OCCardContainerMedioum .OCPremadeMenuImages{
+    border-radius: 10px;
+    width: 190px;
+    box-shadow: 2px 2px 2px rgb(161, 161, 161);
+}
+
+
+@media (max-width: 1254px) { 
+
+    .OCCardContainerMedioum .OCOrderContentMedioum {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .OCCardContainerLarge {
+        padding-bottom: 25px;
+        margin: 0 0 70px 0;
+        width: 100%;
+    }
+
+    .COrderCardsMainHeading {
+        margin: 20px 10px 60px 10px; 
+        font-size: 45px; 
+    }
+
+    .OCCardContainerLarge .OCSalad {
+        width: 185px;
+    }
+
+    .OCCardContainerLarge .OCWafel {
+        width: 190px;
+    }
+
+    .OCCardContainerLarge .OCPizza {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 981px) { 
+
+    .CLayout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .COrderCards {
+        width: 90%;
+        margin: 0 auto 30px auto;
+    }
+
+    .CForm {
+        position: relative;
+        width: 491px;
+        margin: 0 auto;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .CForm form {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 541px) { 
+
+    .COrderCardsMainHeadingYourOrder {
+        display: none;
+    }
+
+    .COrderCardsMainHeading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .CForm {
+        position: relative;
+        width: 98%;
+        margin: 0 auto;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .CForm h1{
+        margin-bottom: 40px !important;
+    }
+
+    .CInputs {
+        width: 90% !important;
+        margin: 10px auto !important;
+    }
+
+    .CInputsComments {
+        width: 90% !important;
+        margin: 10px auto !important;
+    }
+
+    .COrderCards {
+        width: 98%;
+    }
+
+    .CSendOrderButton {
+        width: 170px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .OCCardContainerMedioum .OCPremadeMenuImages {
+        width: 150px;
+    }
+
+}

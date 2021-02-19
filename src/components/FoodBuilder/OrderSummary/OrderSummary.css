@@ -1,0 +1,252 @@
+.OSContainer {
+    background-color: white;
+    position: fixed;
+    z-index: 90;
+    width: 350px;
+    max-height: 505px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 131px;
+    right: 5px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    padding: 20px;
+    transition: 0.3s ease-out;
+}
+
+/* .OSContainerOpen {
+    animation: OSGettingIn 0.4s ease-out forwards;
+}
+
+.OSContainerClossed {
+    animation: OSGettingOut 0.4s ease-out forwards;
+}
+
+.OSContainerTransition-enter {
+
+} */
+
+.OSContainerTransition-enter-active {
+    animation: OSGettingIn 0.4s ease-out forwards;
+}
+
+/* .OSContainerTransition-exit {
+
+} */
+
+.OSContainerTransition-exit-active {
+    animation: OSGettingOut 0.4s ease-out forwards;
+}
+
+.OSCardContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.OSCheckoutButton{
+    margin: 25px 0 15px 0;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 200;
+    font-size: 20px;
+    color: rgb(240, 240, 240);
+    padding: 15px;
+    background-color: rgb(233, 80, 53);
+    outline: none;
+    transition: 0.2s ease-out;
+}
+
+.OSCheckoutButton:hover:not(:disabled){
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.OSCheckoutButton:active{
+    transform: translateY(10px);
+}
+
+.OSCheckoutButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(180, 180, 180);
+    color: white;
+    border: none;
+}
+
+
+@keyframes OSGettingIn {
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes OSGettingOut {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.5;
+        transform: translateY(50px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(120%);
+    }
+}
+
+
+/* FROM THE ORDER CARDS FILE */
+
+.OCCardContainerSmall {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding: 5px 0;
+    margin: 20px 0;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+    width: 100%;
+    max-height: 94px;
+    transition: 0.3s ease-out;
+}
+
+.OCCardContainerSmall:hover{
+    cursor: pointer;
+    border: 1px solid rgb(233, 80, 53);
+    box-shadow: 2px 2px 2px rgb(233, 80, 53);
+}
+
+.OCCardContainerSmall:hover::after {
+    content: 'DELETE';
+    position: absolute;
+    color: gray;
+    top: 110%; 
+    animation: delete 0.3s ease-out;
+}
+
+@keyframes delete {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.OCOrderContentSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    text-align: center;
+}
+
+.OCOrderContentSmall h2{
+    margin: 5px 10px;
+    padding-bottom: 5px;
+    font-weight: 200;
+    letter-spacing: 6px;
+    color: rgb(0, 0, 0);
+}
+
+.OCCardContainerSmall .OCDrinksAdditionalsImages {
+    align-self: center;
+    width: 28%;
+}
+
+.OCCardContainerSmall .OCPremadeMenuImages {
+    align-self: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
+    height: 106px;
+}
+
+.OCCardContainerSmall .OCBurger {
+    align-self: center;
+    width: 30%;
+    overflow: auto;
+    max-height: 100%;
+    padding-left: 10px;
+}
+
+.OCCardContainerSmall .OCBurger img{
+    width: 100%;
+    margin: auto;
+}
+
+.OCCardContainerSmall .OCPizza {
+    width: 30%;
+    position: relative;
+}
+
+.OCCardContainerSmall .OCPizza img:first-child {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 100%;
+}
+
+.OCCardContainerSmall .OCPizza img:not(:first-child){
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 93%;
+    height: 95%;
+}
+
+.OCCardContainerSmall .OCSalad {
+    width: 30%;
+    position: relative;
+}
+
+.OCCardContainerSmall .OCSalad img:first-child{
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 100%;
+}
+
+.OCCardContainerSmall .OCSalad img:not(:first-child){
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 89%;
+    height: 92%;
+}
+
+.OCCardContainerSmall .OCWafel {
+    width: 30%;
+    position: relative;
+}
+
+.OCCardContainerSmall .OCWafel img:first-child{
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    width: 98%;
+}
+
+.OCCardContainerSmall .OCWafel img:not(:first-child){
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 99%;
+    height: 100%;
+}
